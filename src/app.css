@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Courier Prime';
+  src: url('/CourierPrime-Regular.woff2') format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Courier Prime';
+  src: url('/CourierPrime-Italic.woff2') format('woff2');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Courier Prime';
+  src: url('/CourierPrime-Bold.woff2') format('woff2');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Courier Prime';
+  src: url('/CourierPrime-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+}
+
+body {
+  font-family: 'Courier Prime', sans-serif;
+}
+
+h1, h2, h3, p, a, button {
+    font-family: 'Courier Prime', sans-serif;
+}
+
+h1, h2 {
+    font-weight: 700;
+}
+
+h3, p, a, button {
+    font-weight: 400;
+}
