@@ -119,12 +119,14 @@
           <p class="ending-description">{currentNode.endingDescription}</p>
           
           <div class="ending-choices">
-            {#each currentNode.choices as choice}
-              <ChoiceButton 
-                text={choice.text} 
+            <ChoiceButton 
+                text="Play Again"
                 on:click={() => goto("/play")}
-              />
-            {/each}
+            />
+            <ChoiceButton 
+                text="Try Another Play"
+                on:click={() => currentNodeId = 'node_1.0'}
+            />
           </div>
         </div>
       {/if}
