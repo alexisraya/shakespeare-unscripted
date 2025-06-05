@@ -1,21 +1,21 @@
-<script>
+<script lang="ts">
   import { onMount } from 'svelte';
   import { page } from '$app/stores';
-  import { twoGentlemenStory } from '$lib/data/twoGentlemenStory.js';
-//   import { merchantOfVeniceStory } from '$lib/data/merchantOfVeniceStory.js';
-//   import { tamingOfShrewStory } from '$lib/data/tamingOfShrewStory.js';
+  import { twoGentlemenStory } from '$lib/data/twoGentlemenStory';
+  import { merchantOfVeniceStory } from '$lib/data/merchantOfVeniceStory';
+  import { tamingOfShrewStory } from '$lib/data/tamingOfShrewStory';
   import StoryNode from '$lib/components/StoryNode.svelte';
   import ChoiceButton from '$lib/components/ChoiceButton.svelte';
   import { goto } from '$app/navigation';
   
   // Get the storyId from the URL parameter
   const storyId = $page.params.storyId;
-  
+
   // Map story IDs to their data
   const storyData = {
     'two-gentlemen': twoGentlemenStory,
-    // 'merchant-venice': merchantOfVeniceStory,
-    // 'taming-shrew': tamingOfShrewStory
+    'merchant-venice': merchantOfVeniceStory,
+    'taming-shrew': tamingOfShrewStory
   };
   
   // Get the current story based on the URL
