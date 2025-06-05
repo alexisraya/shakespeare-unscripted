@@ -11,6 +11,7 @@
     <div class="nav">
         <a href="/">Home</a>
         <a href="/play">Play</a>
+        <a href="/about">About</a>
     </div>
     <p>© {currentYear} Alexis Raya</p>
 </div>
